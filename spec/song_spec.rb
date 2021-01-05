@@ -20,25 +20,25 @@ describe "Song" do
     end
   end
 
-  describe "#name" do 
+  describe "#name" do #works
     it "has a name" do 
       expect(hit_me.name).to eq("hit me baby one more time")
     end
   end
 
-  describe "#artist" do 
+  describe "#artist" do #works
     it "has an artist" do 
       expect(hit_me.artist).to eq("Brittany Spears")
     end
   end
 
-  describe "#genre" do 
+  describe "#genre" do #works
     it "has a genre" do
       expect(hit_me.genre).to eq("pop") 
     end
   end
 
-  describe "class variables" do 
+  describe "class variables" do #works
     it "has a class variable, @@count" do 
       expect(Song.class_variable_get(:@@count)).to eq(3)
     end
